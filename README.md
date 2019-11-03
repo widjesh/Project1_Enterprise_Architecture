@@ -6,7 +6,7 @@
 3. Run command : `./mvnw install dockerfile:build`
     Note : If not in iOS Enviroment, go to step 4
 4. Run command : `/mvnw install dockerfile:build`
-5. Run command : docker-compose up
+5. Run command : `docker-compose up`
 6. Open POSTMAN or RESTClient (In Visual Code) 
 7. Make a `POST` request to : `http://localhost:8080/authenticate`
     Add this object literal in body : 
