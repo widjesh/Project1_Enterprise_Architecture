@@ -17,5 +17,6 @@ public class DBWriter implements ItemWriter<Student> {
     @Override
     public void write(List<? extends Student> students) throws Exception {
         studentRepository.saveAll(students);
+        System.out.println("Saved...");
     }
 }
