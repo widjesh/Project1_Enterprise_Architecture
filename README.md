@@ -10,10 +10,15 @@
 6. Open POSTMAN or RESTClient (In Visual Code) 
 7. Make a `POST` request to : `http://localhost:8080/authenticate`
     Add this object literal in body : 
+
     `{
+
 	"username":"shiva",
+
 	"password" : "bhaggan"
+
     }`
+    
 8. Copy the JWT from the response
 9. Make a `GET` request to : `http://localhost:8080/load`
     Navigate to HEADERS if using postman and add the following KEY Value
