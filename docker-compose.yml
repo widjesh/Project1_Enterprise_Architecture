@@ -1,0 +1,21 @@
+version: "2"
+services:
+  spring-batch:
+    image: spring-security-jwt-image/spring-security-jwt
+    ports:
+      - "8080:8080"
+    networks:
+      - spring-batch-mysql
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+    image: mysql:8
+    networks:
+      - spring-batch-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=root
+
+networks:
+  spring-batch-mysql:
